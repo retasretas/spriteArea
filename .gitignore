@@ -1,0 +1,7 @@
+doc/
+*.swp
+*~
+.DS_Store
+.secret
+.idea
+.project
