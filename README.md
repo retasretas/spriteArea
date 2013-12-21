@@ -1,4 +1,4 @@
-spriteArea
+spriteArea.js
 ==========
 
 スプライトシートを手軽にアニメーションさせます。 sprite sheet animation easily.
