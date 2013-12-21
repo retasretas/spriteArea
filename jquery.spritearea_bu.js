@@ -10,7 +10,7 @@
 *   usage
 * ========================
 * <!-- divのクラス名を"sprite_areaと指定し、data-widthとdata-heightに1セルの幅と高さを指定、data-fpsでそのエリアのfpsを定義する -->
-*   <div class="sprite_area" data-width="192" data-height="192" data-title="24">
+*   <div class="sprite_area" data-width="192" data-height="192" data-fps="24">
 *       <img src="hoge.png">
 *       <img src="piyo.png">
 *       <img src="nyaaa.png">
