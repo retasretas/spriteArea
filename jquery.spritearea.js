@@ -39,7 +39,7 @@
             
             //元の画像は隠す
             imgList.css("display", "none");
-            imgList.load(function(){
+            imgList.each(function(){
                 console.log("img load completed!");
                 var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
                 sprite.initCSS();
