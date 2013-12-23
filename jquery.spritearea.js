@@ -43,8 +43,8 @@
             imgList.each(function(){
                 console.log("img load completed!");
                 var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
-                sprite.initCSS();
-                sprite.next();
+                // sprite.initCSS();
+                // sprite.next();
             });
             
         });
@@ -100,6 +100,9 @@
         object.col = object.parseSprite(img, w, h)[1];
         object.frames = object.row * object.col;
         
+        object.initCSS();
+        object.next();
+
         return object;
     }
 
