@@ -3,7 +3,7 @@
 * The MIT License http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license
 * Copyright (c) 2013 retas
 * Author : @circle_retas
-* spcial thanks : ikaflower
+* spcial thanks : ikaflower -> http://ikaflower.org/, other -> http://w3q.jp/t/5111
 */
 
 /*
@@ -41,9 +41,6 @@
             imgList.css("display", "none");
             
             imgList.each(function(i, dom){
-                // console.log("img load completed!");
-                // var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
-                
                 console.log(dom);
                 if (dom.complete){
                     var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
