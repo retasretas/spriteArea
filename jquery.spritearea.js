@@ -40,9 +40,17 @@
             //元の画像は隠す
             imgList.css("display", "none");
             
-            imgList.each(function(){
-                console.log("img load completed!");
+            imgList.each(function(i, dom){
+                // console.log("img load completed!");
                 var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
+                
+                // if (dom.completed){
+                //     var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
+                // }else{
+                //     $(dom).load(function(){
+                //         var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
+                //     });
+                // }
                 // sprite.initCSS();
                 // sprite.next();
             });
