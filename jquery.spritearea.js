@@ -42,17 +42,16 @@
             
             imgList.each(function(i, dom){
                 // console.log("img load completed!");
-                var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
+                // var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
                 
-                // if (dom.completed){
-                //     var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
-                // }else{
-                //     $(dom).load(function(){
-                //         var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
-                //     });
-                // }
-                // sprite.initCSS();
-                // sprite.next();
+                console.log(dom);
+                if (dom.complete){
+                    var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
+                }else{
+                    $(dom).load(function(){
+                        var sprite = new initSprite([cellWidth, cellHeight], fps, this, cellWidth, cellHeight);
+                    });
+                }
             });
             
         });
