@@ -24,4 +24,4 @@ spriteArea.js
 ```
 
 ## demo page
-http://retasretas.github.io/spriteArea/
+http://retasretas.github.io/spriteArea.js/
